@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Department - George Mason University</title>
+    <!--Bootrstrap for responsive design and icon styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS for styling various components of the webpage s-->>
+    <style>
+        :root {
+            --gmu-green: #006633;
+            --gmu-yellow: #FFCC33;
+        }
+        body {
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: var(--gmu-green);
+        }
+        .gmu-header {
+            border: 5px solid var(--gmu-green);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .gmu-text {
+            color: var(--gmu-green);
+        }
+        .required::after {
+            content: "*";
+            color: red;
+            margin-left: 4px;
+        }
+        .course-table {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .degree-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .degree-list li {
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            border-left: 4px solid var(--gmu-green);
+        }
+        .nav-pills .nav-link.active {
+            background-color: var(--gmu-green);
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation bar to easily navigate across portfolio, cs dept page and survey pagea-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--gmu-green);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="GMU Logo" height="30" class="d-inline-block align-text-top me-2">
+                GMU CS Department
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cs-department.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cs-survey.html">Survey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Header in GMU theme-->
+    <div class="container py-5">
+        <div class="gmu-header bg-white">
+            <div class="d-flex align-items-center justify-content-center gap-3">
+                <img src="logo.jpg" alt="GMU Logo" style="width:60px; height:60px; object-fit:contain;">
+                <div>
+                    <h1 class="text-center mb-0">Computer Science Department</h1>
+                    <p class="text-center mb-0">George Mason University</p>
+                </div>
+            </div>
+        </div>
+        <!--Navigation bar to toggle across tabs-->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="bg-white p-4 rounded shadow-sm">
+                    <ul class="nav nav-pills mb-4" id="departmentTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#about">About</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#degrees">Degrees</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#courses">Courses</button>
+                        </li>
+                    </ul>
+                    <!--Bootstrap Tabs to toggle between various components of CS department-->
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="about">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h2 class="card-title">About the Department</h2>
+                                    <p class="card-text">The Department of Computer Science at George Mason University is a leading center for computer science education and research. Our faculty members are engaged in cutting-edge research across various domains including artificial intelligence, cybersecurity, software engineering, and data analytics.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="degrees">
+                            <h3 class="mb-3">MS Degrees Offered</h3>
+                            <ul class="degree-list">
+                                <li>MS in Computer Science</li>
+                                <li>MS in Software Engineering</li>
+                                <li>MS in Information Systems</li>
+                                <li>MS in Information Security and Assurance</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="courses">
+                            <h3 class="mb-3">Required Courses</h3>
+                            <div class="table-responsive course-table">
+                                <table class="table table-hover mb-0">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Course Number</th>
+                                            <th>Course Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>CS 530</td>
+                                            <td>Mathematical Foundations of Computer Science</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CS 531</td>
+                                            <td>Fundamentals of Systems Programming</td>
+                                        </tr>
+                                        <tr>
+                                            <td>CS 584</td>
+                                            <td>Theory and Applications of Data Mining</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Button to move for forward to survey or navigate back to portfolio-->
+                    <div class="text-center mt-4">
+                        <a href="cs-survey.html" class="btn btn-success">
+                            <i class="bi bi-pencil-square me-2"></i>Take Our Survey
+                        </a>
+                        <a href="index.html" class="btn btn-outline-secondary ms-2">
+                            <i class="bi bi-arrow-left me-2"></i>Back to Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

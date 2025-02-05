@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Abdul Malik Khudus Shaik - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Bootstrap for responsive design and improved UI components-->>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--CSS for styling various components of the webpage-->>
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+.project-card {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.skill-tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+}
+.experience-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+.experience-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card-header {
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 4px 4px 0 0;
+}
+.skill-tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+.skill-tag:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-1px);
+}
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 15px;
+    flex-shrink: 0;
+}
+.text-container {
+    flex-grow: 1;
+}
+.nav-link {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+.nav-link:hover {
+    color: #f8f9fa !important;
+    transform: translateY(-2px);
+}
+.btn-top {
+    background-color: #212529;
+    color: white;
+    transition: all 0.3s ease;
+}
+.btn-top:hover {
+    background-color: #343a40;
+    transform: translateY(-2px);
+}
+</style>
+</head>
+<body class="bg-light">
+
+<!-- Navigation bar holding links to easily navigate to other platforms-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/samk-online"><i class="fa fa-github"></i> GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/abdul-malik-khudus-shaik-b46b161ab/"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:ashaik24@gmu.edu"><i class="fa fa-envelope"></i> Email</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:+15714608983"><i class="fa fa-phone"></i> +1(571)-460-8983</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container py-4">
+  <header class="text-center py-5 bg-white rounded shadow-sm mb-4">
+    <h1 class="display-4"><b>Abdul Malik Khudus Shaik</b></h1>
+    <h6 class="text-muted">
+      <!--Button to navigate to the CS department page-->
+      <a href="cs-department.html" class="btn btn-success text-decoration-none" style="transition: color 0.3s;">
+        Computer Science
+    </a>
+      Graduate Student and Graduate Teaching Assistant
+    </h6>
+  </header>
+
+  <!--About me section-->
+  <div class="row g-4">
+    <div class="col-lg-8">
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <h3>About Me</h3>
+        <div class="w3-row-padding">
+          <div class="w3-col m5">
+            <img src="profile.jpeg" alt="Abdul Malik Khudus Shaik" style="width:100%; max-height:450px; object-fit:cover; border-radius:4px;" class="w3-margin-bottom">
+          </div>
+          <div class="w3-col m7">
+            <div style="height:100%; display:flex; align-items:center;">
+              <p style="text-align:justify; line-height:1.6; font-size:16px;">
+                I am Abdul Malik Khudus Shaik, a Master's student in Computer Science at George Mason University, specializing in AI, machine learning, and data analysis. With a strong background in programming, data science, and business analysis, I have gained practical experience through internships, academic projects, and collaborations. My work includes developing AI-driven tools, implementing data pipelines, and creating predictive models. I am passionate about leveraging technology to solve real-world problems, with a particular interest in using data to drive informed decision-making. Please explore my projects and achievements, and feel free to connect with me via LinkedIn or email.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--Work Ex section -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <h3>Work Experience</h3>
+        <div class="experience-card">
+          <div class="logo-container">
+            <div class="text-container">
+              <h4>MyLLife Inc. - Data Analysis Intern</h4>
+              <h6 class="w3-text-grey">June 2024 - present | McLean, VA</h6>
+            </div>
+            <img src="myllife.png" alt="MyLLife Logo" class="logo">
+          </div>
+          <ul>
+            <li>Developed a custom AI chatbot using Custom Data (Own Quran Translations) and OpenAI API to help users resolve their queries about Qur'an</li>
+            <li>Improved data collection practices for better analysis and visualization of data</li>
+            <li>Complete website management, content refinement, and upload</li>
+            <li>Worked on multiple research case studies, where my key role was to collect data to back up arguments and make visualizations to make data more digestible for larger audiences</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <div class="logo-container">
+            <div class="text-container">
+              <h4>Costello School of Business - George Mason University - Graduate Teaching Assistant</h4>
+              <h6 class="w3-text-grey">Jan 2025 - present | Fairfax, VA</h6>
+            </div>
+            <img src="sob.jpeg" alt="Costello School of Business Logo" class="logo">
+          </div>
+          <ul>
+            <li>Evaluated and graded business analysis case studies for 150+ students, providing detailed feedback to enhance learning outcomes</li>
+            <li>Addressed student queries, ensuring clarity on business analysis concepts and fostering academic understanding</li>
+            <li>Provided detailed feedback to improve student performance and comprehension. Managed multiple deadlines efficiently while maintaining accuracy and fairness in grading</li>
+          </ul>
+        </div>
+
+        <div class="experience-card">
+          <div class="logo-container">
+            <div class="text-container">
+              <h4>Little Star Foods Pvt. Ltd. - Business Analysis Intern</h4>
+              <h6 class="w3-text-grey">Jun 2022 - May 2023 | Telangana, India</h6>
+            </div>
+            <img src="yummy.png" alt="Little Star Foods Logo" class="logo">
+          </div>
+          <ul>
+            <li>Led the digitization program to achieve better data accessibility and operational efficiency</li>
+            <li>Spearheaded business analysis initiatives, implementing advanced data management practices that streamlined decision-making processes</li>
+            <li>Directed the creation and delivery of insightful quarterly and annual presentations, leveraging digital data to drive strategic planning</li>
+            <li>Developed and maintained comprehensive digital performance reports, improving organizational oversight and management capabilities</li>
+          </ul>
+        </div>
+      </div>
+    <!--Projects section-->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <h3>Featured Projects</h3>
+        
+        <div class="card" style="margin:10px 0;">
+          <h5>Docorama - AI-Powered Document Editor</h5>
+          <h6 class="w3-text-grey">October 2024</h6>
+          <ul>
+            <li>Built a voice-driven document editor leveraging Eleven Labs, OpenAI Whisper, and OpenAI predictive text for seamless speech-to-text, text-to-speech, and hands-free editing</li>
+            <li>Automated content summarization and video script generation with Captions AI, enhancing content creation efficiency</li>
+            <li>Streamlined verbal document creation and editing, enabling real-time modifications and AI-driven insights</li>
+          </ul>
+        </div>
+        
+        <div class="card" style="margin:10px 0;">
+          <h5>VerifAIed - Content Verification App</h5>
+          <h6 class="w3-text-grey">November 2024</h6>
+          <ul>
+            <li>Developed a desktop app using PyQt5, Together AI, and Perplexity API for screenshot, recording, and YouTube content verification</li>
+            <li>Implemented real-time fact-checking, source citation, and video transcription for misinformation detection</li>
+            <li>Focused on privacy with real-time analysis, no data storage, and robust content verification tools</li>
+          </ul>
+        </div>
+        
+        <div class="card" style="margin:10px 0;">
+          <h5>Know Your Stock</h5>
+          <h6 class="w3-text-grey">April 2024</h6>
+          <ul>
+            <li>Developed a responsive stock data platform using JavaScript, Highcharts, HTML, CSS, Python, and Flask, enabling real-time stock search, data visualization, and insights</li>
+            <li>Integrated RESTful APIs for fetching stock data and news, with real-time visualizations and customized summary tables using Highcharts</li>
+            <li>Enhanced user experience with tab-based navigation, ticker-based search, error handling, and cross-device compatibility</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin:10px 0;">
+          <h5>NBA Pipeline Analytics</h5>
+          <h6 class="w3-text-grey">December 2023</h6>
+          <ul>
+            <li>Designed a data pipeline using Python, Playwright, BeautifulSoup, and pandas to scrape and parse NBA game data from 2017 to 2023, extracting box scores, advanced metrics, and game outcomes</li>
+            <li>Automated data cleaning and feature engineering using pandas group operations and custom functions, enabling efficient processing of 1,600+ game records with 150+ performance metrics</li>
+            <li>Used Tableau to visualize team performance trends and game statistics, highlighting insights from the processed dataset</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   <!--Education section-->
+    <div class="col-lg-4">
+      <div class="card">
+        <div class="card-header">
+          <h4>Education</h4>
+        </div>
+        <div>
+          <div class="card" style="margin:10px 0;">
+            <div class="logo-container">
+              <div class="text-container">
+                <p><strong>George Mason University</strong><br>
+                MS in <a href="cs-department.html" class="text-decoration-none" style="color: #006633; transition: color 0.3s;">
+                  Computer Science
+                </a>  (GPA: 3.84)<br>
+                Expected: May 2025</p>
+              </div>
+              <img src="logo.jpg" alt="George Mason University Logo" class="logo">
+            </div>
+          </div>
+          
+          <div class="card" style="margin:10px 0;">
+            <div class="logo-container">
+              <div class="text-container">
+                <p><strong>B V Raju Institute of Technology</strong><br>
+                B.Tech in Information Technology (GPA: 8.5)<br>
+                Completed: May 2023</p>
+              </div>
+              <img src="bvlogo.jpeg" alt="B V Raju Institute of Technology Logo" class="logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Skills section-->
+      <div class="card">
+        <div class="card-header">
+          <h4>Skills</h4>
+        </div>
+        <div>
+          <p><strong>Programming:</strong></p>
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">Java</div>
+          <div class="skill-tag">C</div>
+          <div class="skill-tag">SQL</div>
+          
+          <p><strong>Data Science:</strong></p>
+          <div class="skill-tag">NumPy</div>
+          <div class="skill-tag">Pandas</div>
+          <div class="skill-tag">TensorFlow</div>
+          <div class="skill-tag">PyTorch</div>
+          
+          <p><strong>Web Technologies:</strong></p>
+          <div class="skill-tag">HTML</div>
+          <div class="skill-tag">CSS</div>
+          <div class="skill-tag">JavaScript</div>
+          <div class="skill-tag">ReactJS</div>
+        </div>
+      </div>
+    <!--Publicaitons section-->
+      <div class="card">
+        <div class="card-header">
+          <h4>Publications</h4>
+        </div>
+        <div>
+          <p>
+            <strong>Title:</strong> Skin Cancer Lesion Classification Using Deep Learning and AutoKeras
+            <br>
+            <a href="https://www.ijcrt.org/papers/IJCRT2303826.pdf" target="_blank" class="w3-button w3-black w3-margin-top">View Publication</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <!--Button to scroll back to the top of the page-->>
+    <a href="#" class="btn btn-top mb-3"><i class="fa fa-arrow-up me-2"></i>To the top</a>
+    <p>Contact: +1(571)-460-8983 | <a href="mailto:ashaik24@gmu.edu" class="text-white">Email</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
